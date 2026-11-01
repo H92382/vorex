@@ -8,5 +8,6 @@ pkg install python -y
 pkg install cloudflared -y 
 pip install flask
 pip install requests
+cd vorex
 python main.py 
 ```
