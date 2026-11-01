@@ -1,4 +1,5 @@
 ```bash
+termux-change-repo 
 termux-setup-storage
 cd /sdcard
 pkg install git -y
