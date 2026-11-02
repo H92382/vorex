@@ -1,6 +1,6 @@
 import os
 import re
-#import header.title
+import header.title
 
 def get_public_url(log):
     match = re.search(r"https://[a-zA-Z0-9.-]+\.trycloudflare\.com", log)
